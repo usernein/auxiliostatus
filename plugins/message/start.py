@@ -5,4 +5,4 @@ from pyrogram import Client, Filters
 async def onstart(client, message, lang):
     text, keyboard = constructors.start(message, lang)
     
-    await message.reply(text, reply_markup=keyboard)
+    await message.reply(text, reply_markup=keyboard, disable_web_page_preview=True)

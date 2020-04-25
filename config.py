@@ -38,10 +38,10 @@ pyrogram_config = json.loads(pyrogram_config)
 app = Client(os.getenv('PYROGRAM_SESSION') or 'bot', plugins={"root":"plugins"}, **pyrogram_config)
 app.set_parse_mode('html')
 
-with open('./strings/en.yml') as enfp:
+with open('./strings/ptbr.yml') as ptfp:
     langs = Langs(
         escape_html=True,
-        en=yaml.safe_load(enfp),
+        ptbr=yaml.safe_load(ptfp),
     )
     
 logs_chat = tryint(os.getenv('LOGS_CHAT'))

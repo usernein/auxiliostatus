@@ -1,0 +1,43 @@
+# Environment variables that the bot may use
+NAME: Português
+LANGUAGE_CODE: ptbr
+TIMEZONE: America/Sao_Paulo
+
+# the back button on many menus
+back: «
+
+start_log: |-
+    👾 Bot started!
+    🖇 Loaded <code>{plugins_count}</code> plugins:
+    <code>{plugins_text}</code>
+    
+    🏷 <b>app_version</b>: <code>{client.app_version}</code>
+    🛸 <b>device_model</b>: <code>{client.device_model}</code>
+    💻 <b>system_version</b>: <code>{client.system_version}</code>
+    
+# /start
+start_text: |-
+    👾 Este é um bot <b>não-oficial</b> para consultar o status da sua solicitação do auxílio emergencial.
+    
+    ❕ Os CPFs e códigos enviados ao bot <b>NÃO</b> são salvos. O código completo do bot está disponível no GitHub para análise e uso.
+    
+    📦 O código deste bot é baseado no <a href='https://github.com/leonardoProjects/status-auxilio-emergencial'>status-auxilio-emergencial</a> e está disponível no GitHub. Acesse <a href='https://github.com/usernein/auxiliostatus'>aqui</a>. 
+
+# the button at /start
+help: ❕ Help
+# the help menu (accessible by clicking the button) and /help
+help_text: |-
+    ℹ️ Para consultar o andamento de uma solicitação, basta enviar o CPF e o código (enviado por SMS) no formato CPF|CODIGO.
+    
+    Ex: <code>95289435873|63889</code>
+
+# the button at /start
+about: ❔ About
+# the about menu (accessible by clicking the button)
+about_text: |-
+    📦 Código-fonte: github.com/usernein/auxiliostatus
+    👨‍🔧 Desenvolvedor: @usernein
+    
+    🙃 Desenvolvido com:
+    - <a href='https://https://github.com/leonardoProjects/status-auxilio-emergencial'>status-auxilio-emergencial</a>
+
