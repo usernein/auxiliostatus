@@ -24,20 +24,22 @@ start_text: |-
     📦 O código deste bot é baseado no <a href='https://github.com/leonardoProjects/status-auxilio-emergencial'>status-auxilio-emergencial</a> e está disponível no GitHub. Acesse <a href='https://github.com/usernein/auxiliostatus'>aqui</a>. 
 
 # the button at /start
-help: ❕ Help
+help: ❔ Ajuda
 # the help menu (accessible by clicking the button) and /help
 help_text: |-
-    ℹ️ Para consultar o andamento de uma solicitação, basta enviar o CPF e o código (enviado por SMS) no formato CPF|CODIGO.
+    ❔ <b>Ajuda</b>
+    Para consultar o andamento de uma solicitação, basta enviar o CPF e o código (enviado por SMS) no formato CPF|CODIGO.
     
     Ex: <code>95289435873|63889</code>
 
 # the button at /start
-about: ❔ About
+about:  ℹ️ Sobre
 # the about menu (accessible by clicking the button)
 about_text: |-
+    ℹ️ <b>Sobre</b>
     📦 Código-fonte: github.com/usernein/auxiliostatus
     👨‍🔧 Desenvolvedor: @usernein
     
     🙃 Desenvolvido com:
-    - <a href='https://https://github.com/leonardoProjects/status-auxilio-emergencial'>status-auxilio-emergencial</a>
+    - <a href='https://github.com/usernein/status-auxilio-emergencial'>status-auxilio-emergencial</a>
 
