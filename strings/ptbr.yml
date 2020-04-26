@@ -6,6 +6,8 @@ TIMEZONE: America/Sao_Paulo
 # the back button on many menus
 back: «
 
+error_invalid_cpf: ❗️ CPF inválido!
+
 start_log: |-
     👾 Bot started!
     🖇 Loaded <code>{plugins_count}</code> plugins:
@@ -17,7 +19,7 @@ start_log: |-
     
 # /start
 start_text: |-
-    👾 Este é um bot <b>não-oficial</b> para consultar o status da sua solicitação do auxílio emergencial.
+    👾 Este é um bot <b>não-oficial</b> para consultar o status da sua solicitação do Auxílio Emergencial.
     
     ❕ Os CPFs e códigos enviados ao bot <b>NÃO</b> são salvos. O código completo do bot está disponível no GitHub para análise e uso.
     
@@ -28,7 +30,7 @@ help: ❔ Ajuda
 # the help menu (accessible by clicking the button) and /help
 help_text: |-
     ❔ <b>Ajuda</b>
-    Para consultar o andamento de uma solicitação, basta enviar o CPF e o código (enviado por SMS) no formato CPF|CODIGO.
+    Para consultar o andamento de uma solicitação, basta enviar o CPF e o código (enviado por SMS) no formato CPF|CÓDIGO.
     
     Ex: <code>95289435873|63889</code>
 
@@ -41,5 +43,5 @@ about_text: |-
     👨‍🔧 Desenvolvedor: @usernein
     
     🙃 Desenvolvido com:
-    - <a href='https://github.com/usernein/status-auxilio-emergencial'>status-auxilio-emergencial</a>
+    - <a href='https://github.com/usernein/auxilio'>usernein/auxilio</a>
 

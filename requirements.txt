@@ -7,6 +7,8 @@ termcolor
 meval
 python-dotenv
 
+https://github.com/usernein/auxilio/zipball/master
+
 sqlalchemy
 orm~=0.1
 
