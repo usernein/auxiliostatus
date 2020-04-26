@@ -26,7 +26,7 @@ status_long_result: |-
     Solicitação inicial: {status['dhFinalizacaoCadastro']}
             
 status_result: |- 
-    📄 <b>Status</b>: <code>{status[''situacao'']}</code> | <code>{status[''nuSituacaoCadastro'']}</code>
+    📄 <b>Status</b>: <code>{status.situacao}</code> | <code>{status.nuSituacaoCadastro}</code>
     
 start_log: |-
     👾 Bot started!
