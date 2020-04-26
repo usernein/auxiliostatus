@@ -17,10 +17,12 @@ async def on_query(client, message, lang):
     try:
         status = auxilio.status(cpf, code)
         #await message.reply(lang.status_long_result(status=status))
-        await message.reply(lang.status_result(status=status))
+        try:
+            await message.reply(lang.status_result(status=status))
+        except Exception as e:
+            print(e)
         await message.reply(f'<code>{html.escape(json.dumps(status, indent=4))}</code>')
     except auxilio.InvalidCode as e:
-        await message.reply(e.api_response)
-        await message.reply(lang.error_invalid_code)
+        await message.reply(lang.error_invalid_code(error=e.api_response))
     except auxilio.InvalidResponse as e:
         await message.reply(lang.error_invalid_response(error=e.api_response))

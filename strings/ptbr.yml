@@ -7,8 +7,14 @@ TIMEZONE: America/Sao_Paulo
 back: «
 
 error_invalid_cpf: ❗️ CPF inválido!
-error_invalid_code: ❗️ Código inválido ou expirado!
-error_invalid_response: "❗️ Resposta inválida da API: {error}"
+error_invalid_code: |- 
+    ❗️ Código inválido ou expirado!
+    
+    <code>{error}</code>
+error_invalid_response: |- 
+    ❗️ Resposta inválida da API:
+    
+    <code>{error}</code>
 
 status_long_result: |- 
     Nome: {status['noPessoa']}
@@ -20,7 +26,7 @@ status_long_result: |-
     Solicitação inicial: {status['dhFinalizacaoCadastro']}
             
 status_result: |- 
-    📄 <b>Status</b>: <code>{status.situacao}</code> | <code>{status.nuSituacaoCadastro}</code>
+    📄 <b>Status</b>: <code>{status['situacao']}</code> | <code>{status['nuSituacaoCadastro']}</code>
     
 start_log: |-
     👾 Bot started!
