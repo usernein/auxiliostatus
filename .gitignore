@@ -58,3 +58,4 @@ test.py
 *.sqlite
 debug.*
 *errors.txt
+serve
