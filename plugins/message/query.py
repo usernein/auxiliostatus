@@ -17,7 +17,7 @@ async def on_query(client, message, lang):
     try:
         status = auxilio.status(cpf, code)
         # Convert dict to object
-        status = namedtuple(“AuxilioStatus”, status.keys())(*status.values())
+        status = namedtuple("AuxilioStatus", status.keys())(*status.values())
         
         #await message.reply(lang.status_long_result(status=status))
         try:
