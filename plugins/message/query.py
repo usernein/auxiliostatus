@@ -19,7 +19,8 @@ async def on_query(client, message, lang):
         await message.reply(lang.status_long_result(status=status))
         await message.reply(lang.status_result(status=status))
         await message.reply(f'<code>{html.escape(json.dumps(status, indent=4))}</code>')
-    except auxilio.InvalidCode:
+    except auxilio.InvalidCode as e:
+        await message.reply(e.api_response)
         await message.reply(lang.error_invalid_code)
     except auxilio.InvalidResponse as e:
-        await message.reply(lang.error_invalid_response(error=str(e)))
+        await message.reply(lang.error_invalid_response(error=e.api_response))
