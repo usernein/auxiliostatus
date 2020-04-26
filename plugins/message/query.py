@@ -3,6 +3,7 @@ import html
 import json
 import re
 
+from pprint import pprint
 from pyrogram import Client, Filters
 from pyromod.helpers import ikb
 
@@ -16,6 +17,7 @@ async def on_query(client, message, lang):
     
     try:
         status = auxilio.status(cpf, code)
+        pprint(status)
         #await message.reply(lang.status_long_result(status=status))
         try:
             await message.reply(lang.status_result(status=status))
