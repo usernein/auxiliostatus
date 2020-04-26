@@ -63,9 +63,9 @@ about:  ℹ️ Sobre
 # the about menu (accessible by clicking the button)
 about_text: |-
     ℹ️ <b>Sobre</b>
-    📦 Código-fonte: github.com/usernein/auxiliostatus
-    👨‍🔧 Desenvolvedor: @usernein
+      - Código-fonte: github.com/usernein/auxiliostatus
+      - Desenvolvedor: @usernein
     
     🙃 Desenvolvido com:
-    - <a href='https://github.com/usernein/auxilio'>usernein/auxilio</a>
+      - <a href='https://github.com/usernein/auxilio'>usernein/auxilio</a>
 
