@@ -25,5 +25,7 @@ async def on_query(client, message, lang):
             await message.reply(f'<code>{html.escape(json.dumps(status, indent=4))}</code>')
     except auxilio.InvalidCode as e:
         await message.reply(lang.error_invalid_code(error=e.api_response))
+    except auxilio.InvalidCPF as e:
+        await message.reply(lang.error_invalid_cpf(error=e.api_response))
     except auxilio.InvalidResponse as e:
         await message.reply(lang.error_invalid_response(error=e.api_response))

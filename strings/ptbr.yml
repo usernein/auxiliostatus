@@ -15,6 +15,10 @@ error_invalid_response: |-
     ❗️ Resposta inválida da API:
     
     <code>{error}</code>
+error_invalid_cpf: |- 
+    ❗️ CPF inválido!
+    
+    <code>{error}</code>
 
 status_long_result: |- 
     Nome: {status['noPessoa']}
