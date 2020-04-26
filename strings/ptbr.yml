@@ -8,7 +8,7 @@ back: «
 
 error_invalid_cpf: ❗️ CPF inválido!
 error_invalid_code: ❗️ Código inválido ou expirado!
-error_invalid_response: ❗️ Resposta inválida da API: {error}
+error_invalid_response: "❗️ Resposta inválida da API: {error}"
 
 status_long_result: |- 
     Nome: {status['noPessoa']}
