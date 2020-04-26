@@ -1,10 +1,10 @@
+import auxilio
+import html
 import json
 import re
 
 from pyrogram import Client, Filters
 from pyromod.helpers import ikb
-
-import auxilio
 
 @Client.on_message(Filters.regex(r'^(?P<cpf>([\._\-]*[0-9][\._\-]*){11})\|(?P<code>\w+)$'))
 async def on_query(client, message, lang):
@@ -16,8 +16,10 @@ async def on_query(client, message, lang):
     
     try:
         status = auxilio.status(cpf, code)
-        await message.reply('<code>'+json.dumps(status, indent=4)+'</code>')
+        await message.reply(lang.status_long_result(status=status))
+        await message.reply(lang.status_result(status=status))
+        await message.reply(f'<code>{html.escape(json.dumps(status, indent=4))}</code>')
     except auxilio.InvalidCode:
-        await message.reply('Código inválido ou expirado.')
+        await message.reply(lang.error_invalid_code)
     except auxilio.InvalidResponse as e:
-        await message.reply(f'Ocorreu um erro com a resposta da API: {e}')
+        await message.reply(lang.error_invalid_response(error=str(e)))
